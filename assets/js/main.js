@@ -18,6 +18,29 @@ if(navClose){
         navMenu.classList.remove('show-sidebar')
     })
 }
+// ===============DOWNLOAD RESUME=============
+  function downloadResume() {
+    // Create a new anchor element
+    let link = document.createElement('a');
+    
+    // Set the href attribute to the path of your PDF file
+    link.href = '/assets/img/GREGORY ONYANDO RESUME.pdf';
+    
+    // Set the download attribute with the desired file name
+    link.download = 'GREGORY ONYANDO RESUME.pdf';
+    
+    // Append the anchor element to the document
+    document.body.appendChild(link);
+    
+    // Trigger a click on the link element
+    link.click();
+    
+    // Remove the link from the document
+    document.body.removeChild(link);
+  }
+
+  // Attach the function to the button's click event
+  document.getElementById('downloadButton').addEventListener('click', downloadResume);
 
 /*=============== SKILLS TABS ===============*/
 const tabs = document.querySelectorAll('[data-target]'),
