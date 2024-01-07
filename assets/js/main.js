@@ -24,10 +24,10 @@ if(navClose){
     let link = document.createElement('a');
     
     // Set the href attribute to the path of your PDF file
-    link.href = '/assets/img/GREGORY ONYANDO RESUME.pdf';
+    link.href = '/assets/img/GREGORY ONYANDO.docx';
     
     // Set the download attribute with the desired file name
-    link.download = 'GREGORY ONYANDO RESUME.pdf';
+    link.download = 'GREGORY ONYANDO RESUME.docx';
     
     // Append the anchor element to the document
     document.body.appendChild(link);
